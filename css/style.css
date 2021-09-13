@@ -25,6 +25,10 @@ img {
   width: 100%;
 }
 
+hr {
+  width: 50px;
+}
+
 :root {
   /*COLORS*/
   --bordeaux: #61082b;
@@ -142,7 +146,7 @@ main {
 }
 
 main .row {
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 main .btn-blue {
@@ -205,10 +209,6 @@ main .btn-blue {
   margin: 40px 0 30px;
 }
 
-.billing_plans hr {
-  width: 50px;
-}
-
 /*Secondary info*/
 
 .billing_plans i.fa-check {
@@ -235,14 +235,91 @@ main .btn-blue {
   margin-bottom: 50px;
 }
 
+/*TEAMS*/
+
+.teams_header section a {
+  margin: 30px 0;
+}
+
+.team-logo {
+  width: 50%;
+  max-width: 130px;
+}
+
+.logo_square {
+  width: calc(100vw / 7);
+  height: calc(100vw / 7);
+  position: relative;
+}
+
+.logo_square img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo_square.a {
+  background: #a2d39b;
+}
+.logo_square.a.active {
+  box-shadow: 0 0 0 15px #d0e9cd inset;
+}
+
+.logo_square.b {
+  background: #61082b;
+}
+.logo_square.c {
+  background: #0093ce;
+}
+.logo_square.d {
+  background: #ff1c1c;
+}
+.logo_square.e {
+  background: #d5001f;
+}
+.logo_square.f {
+  background: #b4d0e7;
+}
+.logo_square.g {
+  background: #0d2481;
+}
+.logo_square.h {
+  background: #ffd830;
+}
+
+.square_of_teams {
+  width: calc(100vw / 7 * 2);
+}
+
+.team_review {
+  width: calc(100vw / 7 * 3);
+  height: calc(100vw / 7 * 2);
+}
+
+.team_review {
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+.team_review blockquote {
+  margin: 40px 0;
+}
 /*------------------ UTILITY CLASSES ------------------*/
 
-.float-left {
+.float-left > * {
   float: left;
 }
 
-.float-right {
+.float-right > * {
   float: right;
+}
+
+.float-left::after,
+.float-right::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .btn-blue {
@@ -266,7 +343,6 @@ main .btn-blue {
 
 .wider.row {
   width: 80%;
-  margin: auto;
 }
 
 .row > * {
