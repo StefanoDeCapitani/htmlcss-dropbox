@@ -97,6 +97,14 @@ nav {
   padding: 20px;
 }
 
+nav ul:first-child {
+  float: left;
+}
+
+nav ul:last-child {
+  float: right;
+}
+
 nav li {
   display: inline-block;
 }
@@ -149,7 +157,8 @@ main .row {
   padding: 50px 0;
 }
 
-main .btn-blue {
+main .btn-blue,
+main .btn-white {
   width: 100%;
   text-align: center;
 }
@@ -246,6 +255,10 @@ main .btn-blue {
   max-width: 130px;
 }
 
+.team-logo:not(.black) {
+  filter: invert();
+}
+
 .logo_square {
   width: calc(100vw / 7);
   height: calc(100vw / 7);
@@ -267,7 +280,7 @@ main .btn-blue {
 }
 
 .logo_square.b {
-  background: #61082b;
+  background: var(--bordeaux);
 }
 .logo_square.c {
   background: #0093ce;
@@ -279,7 +292,7 @@ main .btn-blue {
   background: #d5001f;
 }
 .logo_square.f {
-  background: #b4d0e7;
+  background: var(--light-blue);
 }
 .logo_square.g {
   background: #0d2481;
@@ -305,6 +318,16 @@ main .btn-blue {
 .team_review blockquote {
   margin: 40px 0;
 }
+
+.main-call-to-action {
+  background: var(--light-blue);
+  padding: 70px 0;
+}
+
+.main-call-to-action h2 {
+  width: 25ch;
+  color: var(--bordeaux);
+}
 /*------------------ UTILITY CLASSES ------------------*/
 
 .float-left > * {
@@ -325,6 +348,12 @@ main .btn-blue {
 .btn-blue {
   background-color: var(--blue);
   color: white;
+  line-height: 40px;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
   line-height: 40px;
 }
 
