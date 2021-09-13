@@ -14,6 +14,7 @@
 a {
   display: inline-block;
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -60,6 +61,14 @@ h5 {
 
 .grey-text {
   color: var(--grey);
+}
+
+.blue-text {
+  color: blue;
+}
+
+.a-underline {
+  text-decoration: underline;
 }
 
 /*------------------ LAYOUT ------------------*/
@@ -196,11 +205,6 @@ main .btn-blue {
   margin: 40px 0 30px;
 }
 
-.call_to_action p > a {
-  text-decoration: underline;
-  color: var(--blue);
-}
-
 .billing_plans hr {
   width: 50px;
 }
@@ -217,8 +221,18 @@ main .btn-blue {
   transform: translateY(10%);
 }
 
-.partner > section > * {
-  margin-bottom: 30px;
+.partner > section > p {
+  margin: 30px 0;
+}
+
+/*OPERATIONS*/
+
+.operation_card > h3 {
+  margin: 20px 0;
+}
+
+.operation_card {
+  margin-bottom: 50px;
 }
 
 /*------------------ UTILITY CLASSES ------------------*/
