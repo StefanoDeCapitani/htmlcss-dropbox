@@ -58,6 +58,10 @@ h5 {
   font-size: 14px;
 }
 
+.grey-text {
+  color: var(--grey);
+}
+
 /*------------------ LAYOUT ------------------*/
 
 /* >> HEADER >> */
@@ -165,21 +169,30 @@ main .btn-blue {
   height: 1200px;
 }
 
-.plan_description section *,
-.plan_description div * {
+.price *,
+.main_info *,
+.call_to_action *,
+.secondary_info * {
   margin-bottom: 15px;
 }
 
-.billing_plans .small-text {
-  color: var(--grey);
+/*Price*/
+
+.billing_card .price {
   margin-bottom: 50px;
 }
 
-.plan_description:not(.enterprise) .btn-blue {
+/*Call to action*/
+
+.call_to_action {
+  margin-bottom: 40px;
+}
+
+.call_to_action .btn-blue {
   margin: 40px 0 30px;
 }
 
-.billing_plans p > a {
+.call_to_action p > a {
   text-decoration: underline;
   color: var(--blue);
 }
@@ -188,9 +201,7 @@ main .btn-blue {
   width: 50px;
 }
 
-.billing_plans .main_info {
-  margin-bottom: 40px;
-}
+/*Secondary info*/
 
 .billing_plans i.fa-check {
   color: var(--blue);
