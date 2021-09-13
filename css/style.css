@@ -266,11 +266,11 @@ main .btn-white {
 }
 
 .plan_description:not(.enterprise) {
-  height: 1200px;
+  height: 1100px;
 }
 
 .price *,
-.main_info *,
+.main_info *:not(i),
 .call_to_action *,
 .secondary_info * {
   margin-bottom: 15px;
