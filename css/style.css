@@ -129,7 +129,11 @@ header .wider.row {
 /* >> MAIN >>*/
 
 main {
-  padding: 80px 0;
+  padding-bottom: 80px;
+}
+
+main .row {
+  padding: 60px 0;
 }
 
 main .btn-blue {
@@ -207,6 +211,16 @@ main .btn-blue {
   color: var(--blue);
 }
 
+/*PARTNER*/
+
+.partner section {
+  transform: translateY(10%);
+}
+
+.partner > section > * {
+  margin-bottom: 30px;
+}
+
 /*------------------ UTILITY CLASSES ------------------*/
 
 .float-left {
@@ -221,6 +235,14 @@ main .btn-blue {
   background-color: var(--blue);
   color: white;
   line-height: 40px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: black;
+  line-height: 40px;
+  border: 1px solid black;
+  padding: 0 20px;
 }
 
 .row {
