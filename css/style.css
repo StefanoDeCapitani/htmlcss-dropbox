@@ -1,0 +1,35 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*COLORS*/
+    --bordeaux: #61082B;
+    --blue: #0061FF;
+    --light-blue: #B4D0E7;
+    --grey: #637381; 
+    /*TYPOGRAPHY*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+/*------------------- Typography -------------------*/
+
+h1 {
+    font-size: 77px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4, h5 {
+    font-size: 16px;
+}
