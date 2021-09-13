@@ -18,6 +18,7 @@
     <title>Dropbox - Home</title>
   </head>
   <body>
+    <!-- Start header -->
     <header>
       <nav class="clearfix">
         <ul class="float-left">
@@ -57,7 +58,11 @@
         </div>
       </div>
     </header>
+    <!-- End header -->
+
+    <!-- Start main -->
     <main>
+      <!-- Start billing plans section -->
       <section class="row billing_plans">
         <h2>Trova il piano Dropbox Business che fa per te</h2>
         <div class="billing_options width-100">
@@ -66,94 +71,182 @@
           <input type="radio" id="annuale" />
           <label for="annuale">Fatturazione annuale</label>
         </div>
-        <div class="col-3_9">
-          <div><span>Singolo</span></div>
-          <section>
-            <h3>Professional</h3>
-            <h4>19.99€</h4>
-            <p class="small-text"></p>
-            <ul>
-              <li>1 utente</li>
-              <li>3 TB di spazio di archiviazione sicuro</li>
-              <li>
-                Funzioni di produttività premium e condivisione file semplice e
-                sicura
-              </li>
-            </ul>
-            <a class="btn-blue" href="#">Prova gratis per 30 giorni</a>
-            <p>Oppure <a href="#">acquista ora</a></p>
-          </section>
-          <div>
-            <h5>Punti salienti del piano</h5>
-            <ul>
-              <li>Invia file fino a 100 GB n Dropbox Transfert</li>
-              <li>Cartelle offline su dispositivi mobili</li>
-              <li>Pulizia remota dell'account</li>
-              <li>Filigrana documento</li>
-              <li>Assistenza prioritaria via email e chat</li>
-            </ul>
+        <!-- Start first billing plan card -->
+        <div class="col-3_9 billing_card">
+          <div class="category"><i class="far fa-user"></i> Singolo</div>
+          <div class="plan_description">
+            <section class="main_info">
+              <h3>Professional</h3>
+              <h4>19.99€</h4>
+              <p class="small-text">/mese</p>
+              <ul>
+                <li><i class="far fa-user"></i> 1 utente</li>
+                <li>
+                  <i class="far fa-folder"></i> 3 TB di spazio di archiviazione
+                  sicuro
+                </li>
+                <li>
+                  <i class="fas fa-pencil-alt"></i>
+                  Funzioni di produttività premium e condivisione file semplice
+                  e sicura
+                </li>
+              </ul>
+              <a class="btn-blue" href="#">Prova gratis per 30 giorni</a>
+              <p>Oppure <a href="#">acquista ora</a></p>
+              <hr />
+            </section>
+            <div>
+              <h5>Punti salienti del piano</h5>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i> Invia file fino a 100 GB n
+                  Dropbox Transfert
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Cartelle offline su dispositivi
+                  mobili
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Pulizia remota dell'account
+                </li>
+                <li><i class="fas fa-check"></i> Filigrana documento</li>
+                <li>
+                  <i class="fas fa-check"></i> Assistenza prioritaria via email
+                  e chat
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-3_9">
-          <div><span>Team</span></div>
-          <section>
-            <h3>Standard</h3>
-            <h4>19.99€</h4>
-            <p class="small-text"></p>
-            <ul>
-              <li>1 utente</li>
-              <li>3 TB di spazio di archiviazione sicuro</li>
-              <li>
-                Funzioni di produttività premium e condivisione file semplice e
-                sicura
-              </li>
-            </ul>
-            <a class="btn-blue" href="#">Prova gratis per 30 giorni</a>
-            <p>Oppure <a href="#">acquista ora</a></p>
-          </section>
-          <div>
-            <h5>Punti salienti del piano</h5>
-            <ul>
-              <li>Invia file fino a 100 GB n Dropbox Transfert</li>
-              <li>Cartelle offline su dispositivi mobili</li>
-              <li>Pulizia remota dell'account</li>
-              <li>Filigrana documento</li>
-              <li>Assistenza prioritaria via email e chat</li>
-              <li>Assistenza prioritaria via email e chat</li>
-            </ul>
+        <!-- End first billing plan card -->
+
+        <!-- Start second billing plan card -->
+        <div class="col-3_9 billing_card">
+          <div class="category"><i class="fas fa-users"></i> Team</div>
+          <div class="plan_description">
+            <section class="main_info">
+              <h3>Standard</h3>
+              <h4>19.99€</h4>
+              <p class="small-text">/ utente / mese, a partire da 3 utenti</p>
+              <ul>
+                <li><i class="fas fa-users"></i> 1 utente</li>
+                <li>
+                  <i class="far fa-folder"></i> 3 TB di spazio di archiviazione
+                  sicuro
+                </li>
+                <li>
+                  <i class="fas fa-pencil-alt"></i>
+                  Funzioni di produttività premium e condivisione file semplice
+                  e sicura
+                </li>
+              </ul>
+              <a class="btn-blue" href="#">Prova gratis per 30 giorni</a>
+              <p>Oppure <a href="#">acquista ora</a></p>
+              <hr />
+            </section>
+            <div>
+              <h5>Punti salienti del piano</h5>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i> Invia file fino a 100 GB n
+                  Dropbox Transfert
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Cartelle offline su dispositivi
+                  mobili
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Pulizia remota dell'account
+                </li>
+                <li><i class="fas fa-check"></i> Filigrana documento</li>
+                <li>
+                  <i class="fas fa-check"></i> Assistenza prioritaria via email
+                  e chat
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Assistenza prioritaria via email
+                  e chat
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-3_9">
-          <div><span>Team</span></div>
-          <section>
-            <h3>Advanced</h3>
-            <h4>19.99€</h4>
-            <p class="small-text"></p>
-            <ul>
-              <li>1 utente</li>
-              <li>3 TB di spazio di archiviazione sicuro</li>
-              <li>
-                Funzioni di produttività premium e condivisione file semplice e
-                sicura
-              </li>
-            </ul>
-            <a class="btn-blue" href="#">Prova gratis per 30 giorni</a>
-            <p>Oppure <a href="#">acquista ora</a></p>
-          </section>
-          <div>
-            <h5>Punti salienti del piano</h5>
-            <ul>
-              <li>Invia file fino a 100 GB n Dropbox Transfert</li>
-              <li>Cartelle offline su dispositivi mobili</li>
-              <li>Pulizia remota dell'account</li>
-              <li>Filigrana documento</li>
-              <li>Assistenza prioritaria via email e chat</li>
-              <li>Assistenza prioritaria via email e chat</li>
-            </ul>
+        <!-- End second billing plan card -->
+
+        <!-- Start third billing plan card -->
+        <div class="col-3_9 billing_card">
+          <div class="category"><i class="fas fa-users"></i> Team</div>
+          <div class="plan_description">
+            <section class="main_info">
+              <h3>Advanced</h3>
+              <h4>19.99€</h4>
+              <p class="small-text">/ utente / mese, a partire da 3 utenti</p>
+              <ul>
+                <li><i class="fas fa-users"></i> 1 utente</li>
+                <li>
+                  <i class="far fa-folder"></i> 3 TB di spazio di archiviazione
+                  sicuro
+                </li>
+                <li>
+                  <i class="fas fa-pencil-alt"></i>
+                  Funzioni di produttività premium e condivisione file semplice
+                  e sicura
+                </li>
+              </ul>
+              <a class="btn-blue" href="#">Prova gratis per 30 giorni</a>
+              <p>Oppure <a href="#">acquista ora</a></p>
+              <hr />
+            </section>
+            <div>
+              <h5>Punti salienti del piano</h5>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i> Invia file fino a 100 GB n
+                  Dropbox Transfert
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Cartelle offline su dispositivi
+                  mobili
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Pulizia remota dell'account
+                </li>
+                <li><i class="fas fa-check"></i> Filigrana documento</li>
+                <li>
+                  <i class="fas fa-check"></i> Assistenza prioritaria via email
+                  e chat
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> Assistenza prioritaria via email
+                  e chat
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End third billing plan card -->
+
+        <!-- Start enterprise billing plan card -->
+        <div class="billing_card width-100">
+          <div class="category"><i class="fas fa-users"></i> Team</div>
+          <div class="plan_description enterprise clearfix">
+            <section class="col-6_9 float-left">
+              <h3>Enterprise</h3>
+              <h4>Contatta l'ufficio vendite per i prezzi</h4>
+              <p>
+                Soluzioni personalizzate e supporto su misura per aiutare i
+                professionisti IT nella gestione su qualsiasi scala.
+              </p>
+            </section>
+            <div class="col-3_9 float-left">
+              <a class="btn-blue" href="#">Contatta l'ufficio vendite</a>
+            </div>
           </div>
         </div>
       </section>
+      <!-- End billing plans section -->
     </main>
+    <!-- End main -->
     <footer></footer>
   </body>
 </html>

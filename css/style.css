@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 img {
   width: 100%;
 }
@@ -61,6 +65,7 @@ h5 {
 header {
   background-color: var(--light-blue);
   padding-top: 80px;
+  margin-bottom: 100px;
 }
 
 /*NAV*/
@@ -70,13 +75,13 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 99;
   width: 100%;
   padding: 20px;
 }
 
 nav li {
   display: inline-block;
-  list-style: none;
 }
 
 nav a {
@@ -119,6 +124,78 @@ header .wider.row {
 
 /* >> MAIN >>*/
 
+main {
+  padding: 80px 0;
+}
+
+main .btn-blue {
+  width: 100%;
+  text-align: center;
+}
+
+/*BILLING PLANS*/
+
+.billing_options {
+  padding-top: 40px;
+}
+
+.billing_options label {
+  margin: 0 20px 0 3px;
+}
+
+/*3/9 column cards*/
+
+.billing_card {
+  min-width: 300px;
+}
+
+.billing_card .category {
+  border: 1px solid var(--grey);
+  border-bottom: none;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.plan_description {
+  padding: 30px;
+  border: 1px solid var(--grey);
+}
+
+.plan_description:not(.enterprise) {
+  height: 1200px;
+}
+
+.plan_description section *,
+.plan_description div * {
+  margin-bottom: 15px;
+}
+
+.billing_plans .small-text {
+  color: var(--grey);
+  margin-bottom: 50px;
+}
+
+.plan_description:not(.enterprise) .btn-blue {
+  margin: 40px 0 30px;
+}
+
+.billing_plans p > a {
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+.billing_plans hr {
+  width: 50px;
+}
+
+.billing_plans .main_info {
+  margin-bottom: 40px;
+}
+
+.billing_plans i.fa-check {
+  color: var(--blue);
+}
+
 /*------------------ UTILITY CLASSES ------------------*/
 
 .float-left {
@@ -148,6 +225,10 @@ header .wider.row {
 .row > * {
   float: left;
   padding: 20px;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 .row::after {
