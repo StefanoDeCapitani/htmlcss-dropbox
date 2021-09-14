@@ -1,4 +1,8 @@
-/* RESET */
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                  A: Global styles
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*--------------------- RESET ---------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +14,19 @@
   display: table;
   clear: both;
 }
+
+:root {
+  /*COLORS*/
+  --bordeaux: #61082b;
+  --blue: #0061ff;
+  --light-blue: #b4d0e7;
+  --grey: #637381;
+  /*TYPOGRAPHY*/
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/*Reset components*/
 
 a {
   display: inline-block;
@@ -23,17 +40,6 @@ li {
 
 img {
   width: 100%;
-}
-
-:root {
-  /*COLORS*/
-  --bordeaux: #61082b;
-  --blue: #0061ff;
-  --light-blue: #b4d0e7;
-  --grey: #637381;
-  /*TYPOGRAPHY*/
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
 }
 
 /*------------------ UTILITY CLASSES ------------------*/
@@ -152,9 +158,11 @@ h5 {
   text-decoration: underline;
 }
 
-/*------------------ LAYOUT ------------------*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                  A: Section styles
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-/* >> HEADER >> */
+/*--------------------- HEADER ---------------------*/
 
 header {
   background-color: var(--light-blue);
@@ -225,7 +233,7 @@ header .wider.row {
   font-size: 40px;
 }
 
-/* >> MAIN >>*/
+/*----------------------- MAIN -----------------------*/
 
 main .row {
   padding: 50px 0;
@@ -266,7 +274,7 @@ main .btn-white {
 }
 
 .plan_description:not(.enterprise) {
-  height: 1100px;
+  min-height: 1100px;
 }
 
 .price *,
@@ -416,7 +424,7 @@ main .btn-white {
   color: var(--bordeaux);
 }
 
-/*FAQ*/
+/* >> FAQ >> */
 
 .row.faq > * {
   float: none;
@@ -445,7 +453,7 @@ main .btn-white {
   float: right;
 }
 
-/*FOOTER*/
+/*-------------------- FOOTER --------------------*/
 
 footer {
   background: black;
