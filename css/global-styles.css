@@ -88,10 +88,12 @@ img {
 .row {
   width: 70%;
   margin: auto;
+  max-width: 1250px;
 }
 
 .wider.row {
   width: 80%;
+  max-width: 1450px;
 }
 
 .row > * {
