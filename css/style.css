@@ -1,215 +1,35 @@
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                  A: Global styles
+                  Home page styles
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-/*--------------------- RESET ---------------------*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/*==================================================
+Table of contents:
+A: HEADER
+  1. HERO
+B: MAIN
+  1. BILLING PLANS
+    - 3/9 COLUMN CARDS
+      a. General
+      b. Price
+      c. Main info
+      d. Call to action
+      e. Secondary info
+  2. FIND A PARTNER
+  3. OPERATIONS
+  4. TESTIMONIALS
+    a. Testimonials header
+    b. Testimonial review
+    c. Testimonials square groups
+      - First testimonials group logos
+      - Second testimonials group logos
+  5. MAIN CALL TO ACTION 
+  6. FAQ
+==================================================*/
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-:root {
-  /*COLORS*/
-  --bordeaux: #61082b;
-  --blue: #0061ff;
-  --light-blue: #b4d0e7;
-  --grey: #637381;
-  /*TYPOGRAPHY*/
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
-
-/*Reset components*/
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-}
-
-li {
-  list-style: none;
-}
-
-img {
-  width: 100%;
-}
-
-/*------------------ UTILITY CLASSES ------------------*/
-
-.float-left > * {
-  float: left;
-}
-
-.float-right > * {
-  float: right;
-}
-
-.float-left::after,
-.float-right::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.btn-blue {
-  background-color: var(--blue);
-  color: white;
-  line-height: 40px;
-}
-
-.btn-white {
-  background-color: white;
-  color: black;
-  line-height: 40px;
-}
-
-.btn-transparent {
-  background-color: transparent;
-  color: black;
-  line-height: 40px;
-  border: 1px solid black;
-  padding: 0 20px;
-}
-
-.row {
-  width: 70%;
-  margin: auto;
-}
-
-.wider.row {
-  width: 80%;
-}
-
-.row > * {
-  float: left;
-  padding: 20px;
-}
-
-.width-100 {
-  width: 100%;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.col-1_9 {
-  width: calc(100% / 9 * 1);
-}
-
-.col-3_9 {
-  width: calc(100% / 9 * 3);
-}
-
-.col-4_9 {
-  width: calc(100% / 9 * 4);
-}
-
-.col-5_9 {
-  width: calc(100% / 9 * 5);
-}
-
-.col-6_9 {
-  width: calc(100% / 9 * 6);
-}
-
-/*------------------- Typography -------------------*/
-
-h1 {
-  font-size: 77px;
-}
-
-h2 {
-  font-size: 40px;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-h4,
-h5 {
-  font-size: 16px;
-}
-
-.small-text {
-  font-size: 14px;
-}
-
-.grey-text {
-  color: var(--grey);
-}
-
-.blue-text {
-  color: blue;
-}
-
-.a-underline {
-  text-decoration: underline;
-}
-
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                  A: Section styles
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-/*--------------------- HEADER ---------------------*/
+/*--------------------- A: HEADER ---------------------*/
 
 header {
-  background-color: var(--light-blue);
-  padding-top: 80px;
   margin-bottom: 100px;
-}
-
-/*NAV*/
-
-nav {
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-  padding: 20px;
-}
-
-nav ul:first-child {
-  float: left;
-}
-
-nav ul:last-child {
-  float: right;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  padding: 0 15px;
-  color: black;
-}
-
-nav a:not(.logo) {
-  line-height: 40px;
-}
-
-nav a.btn-blue {
-  padding: 0 25px;
-  margin-left: 15px;
-}
-
-.logo {
-  vertical-align: middle;
 }
 
 /*HERO*/
@@ -233,7 +53,7 @@ header .wider.row {
   font-size: 40px;
 }
 
-/*----------------------- MAIN -----------------------*/
+/*----------------------- B: MAIN -----------------------*/
 
 main .row {
   padding: 50px 0;
@@ -245,7 +65,7 @@ main .btn-white {
   text-align: center;
 }
 
-/*BILLING PLANS*/
+/* >>>>>>>>>>>>>> 1. BILLING PLANS >>>>>>>>>>>>>> */
 
 .billing_options {
   padding-top: 40px;
@@ -255,7 +75,9 @@ main .btn-white {
   margin: 0 20px 0 3px;
 }
 
-/*3/9 column cards*/
+/*3/9 COLUMN CARDS*/
+
+/*a. General*/
 
 .billing_card {
   min-width: 300px;
@@ -284,13 +106,23 @@ main .btn-white {
   margin-bottom: 15px;
 }
 
-/*Price*/
+.main_info li,
+.secondary_info li {
+  margin-left: 20px;
+}
+
+.main_info li i:first-of-type,
+.secondary_info li i:first-of-type {
+  margin-left: -20px;
+}
+
+/*b. Price*/
 
 .billing_card .price {
   margin-bottom: 50px;
 }
 
-/*Call to action*/
+/*c. Call to action*/
 
 .call_to_action {
   margin-bottom: 40px;
@@ -304,13 +136,13 @@ main .btn-white {
   width: 50px;
 }
 
-/*Secondary info*/
+/*d. Secondary info*/
 
 .billing_plans i.fa-check {
   color: var(--blue);
 }
 
-/*PARTNER*/
+/* >>>>>>>>>>>>>> 2. FIND A PARTNER >>>>>>>>>>>>>> */
 
 .partner section {
   transform: translateY(10%);
@@ -320,7 +152,7 @@ main .btn-white {
   margin: 30px 0;
 }
 
-/*OPERATIONS*/
+/* >>>>>>>>>>>>> 3. OPERATIONS >>>>>>>>>>>>> */
 
 .operation_card > h3 {
   margin: 20px 0;
@@ -330,24 +162,42 @@ main .btn-white {
   margin-bottom: 50px;
 }
 
-/*TEAMS*/
+/* >>>>>>>>>>>> 4. TESTIMONIALS >>>>>>>>>>>> */
 
-.row.teams_header {
-  padding: 0;
+/*a. TESTIMONIALS HEADER*/
+
+.testimonials_header section a {
+  margin-top: 30px;
 }
 
-.teams_header section a {
-  margin: 30px 0;
+/*b. TESTIMONIAL REVIEW*/
+
+.testimonial_review {
+  width: calc(100vw / 7 * 3);
+  height: calc(100vw / 7 * 2);
+  padding: 40px;
+  background: #f5f5f5;
 }
 
-.team-logo {
+.testimonial_logo {
   width: 50%;
   max-width: 130px;
 }
 
-.team-logo:not(.black) {
+.testimonial_logo:not(.black) {
   filter: invert();
 }
+
+.testimonial_review hr {
+  width: 50px;
+  margin-top: 30px;
+}
+
+.testimonial_review blockquote {
+  margin: 40px 0;
+}
+
+/*c. TESTIMONIALS SQUARE GROUPS*/
 
 .logo_square {
   width: calc(100vw / 7);
@@ -355,13 +205,18 @@ main .btn-white {
   position: relative;
 }
 
-.logo_square img {
+.logo_square .testimonial_logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.square_of_testimonials {
+  width: calc(100vw / 7 * 2);
+}
+
+/*First testimonials group logos*/
 .logo_square.a {
   background: #a2d39b;
 }
@@ -378,6 +233,8 @@ main .btn-white {
 .logo_square.d {
   background: #ff1c1c;
 }
+
+/*Second testimonials group logos*/
 .logo_square.e {
   background: #d5001f;
 }
@@ -391,28 +248,7 @@ main .btn-white {
   background: #ffd830;
 }
 
-.square_of_teams {
-  width: calc(100vw / 7 * 2);
-}
-
-.team_review {
-  width: calc(100vw / 7 * 3);
-  height: calc(100vw / 7 * 2);
-}
-
-.team_review {
-  padding: 40px;
-  background: #f5f5f5;
-}
-
-.team_review hr {
-  width: 50px;
-  margin-top: 30px;
-}
-
-.team_review blockquote {
-  margin: 40px 0;
-}
+/* >>>>>>>>>>>> 5. MAIN CALL TO ACTION >>>>>>>>>>>> */
 
 .main-call-to-action {
   background: var(--light-blue);
@@ -424,11 +260,12 @@ main .btn-white {
   color: var(--bordeaux);
 }
 
-/* >> FAQ >> */
+/* >>>>>>>>>>>>>>>>>>>> 6. FAQ >>>>>>>>>>>>>>>>>>>> */
 
 .row.faq > * {
   float: none;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .row.faq {
@@ -451,39 +288,4 @@ main .btn-white {
 
 .row.faq i {
   float: right;
-}
-
-/*-------------------- FOOTER --------------------*/
-
-footer {
-  background: black;
-  color: white;
-  padding: 100px 0 50px;
-}
-
-footer .container {
-  width: 80%;
-  margin: auto;
-}
-
-footer section {
-  width: calc(100% / 5);
-}
-
-footer section hr {
-  width: 50px;
-}
-
-footer ul {
-  margin: 30px 0 90px;
-}
-
-footer li a {
-  color: white;
-  font-size: 14px;
-  line-height: 30px;
-}
-
-footer .language {
-  margin-top: 50px;
 }

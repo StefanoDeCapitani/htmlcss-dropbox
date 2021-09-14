@@ -1,0 +1,279 @@
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                  A: Global styles
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*==================================================
+Table of contents:
+A: RESET
+    1. General
+    2. Reset components
+B: UTILITY CLASSES
+    1. Float classes on container
+    2. Rows
+    3. Columns
+    4. Buttons
+C: TYPOGRAPHY
+    1. Html tags
+    2. Utility classes
+D: LAYOUT
+    1. HEADER
+        - Nav
+    2. MAIN
+    3. FOOTER
+==================================================*/
+
+/*--------------------- A: RESET ---------------------*/
+
+/*1. General*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+:root {
+  /*COLORS*/
+  --bordeaux: #61082b;
+  --blue: #0061ff;
+  --light-blue: #b4d0e7;
+  --grey: #637381;
+  /*TYPOGRAPHY*/
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/*2. Reset components*/
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*------------------ B: UTILITY CLASSES ------------------*/
+
+/*1. Float classes on container*/
+
+.float-left > * {
+  float: left;
+}
+
+.float-right > * {
+  float: right;
+}
+
+.float-left::after,
+.float-right::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*2. Rows*/
+
+.row {
+  width: 70%;
+  margin: auto;
+}
+
+.wider.row {
+  width: 80%;
+}
+
+.row > * {
+  float: left;
+  padding: 20px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*3. Columns*/
+
+.col-1_9 {
+  width: calc(100% / 9 * 1);
+}
+
+.col-3_9 {
+  width: calc(100% / 9 * 3);
+}
+
+.col-4_9 {
+  width: calc(100% / 9 * 4);
+}
+
+.col-5_9 {
+  width: calc(100% / 9 * 5);
+}
+
+.col-6_9 {
+  width: calc(100% / 9 * 6);
+}
+
+.col-1_5 {
+  width: calc(100% / 5);
+}
+
+/*4. Buttons*/
+
+.btn-blue {
+  background-color: var(--blue);
+  color: white;
+  line-height: 40px;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+  line-height: 40px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: black;
+  line-height: 40px;
+  border: 1px solid black;
+  padding: 0 20px;
+}
+
+/*------------------- C: TYPOGRAPHY -------------------*/
+
+/*1. Html tags*/
+
+h1 {
+  font-size: 77px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4,
+h5 {
+  font-size: 16px;
+}
+
+/*Utility classes*/
+
+.small-text {
+  font-size: 14px;
+}
+
+.grey-text {
+  color: var(--grey);
+}
+
+.blue-text {
+  color: blue;
+}
+
+.a-underline {
+  text-decoration: underline;
+}
+
+/*-------------------- D: LAYOUT --------------------*/
+
+/* >> >> HEADER >> >> */
+
+header {
+  background-color: var(--light-blue);
+  padding-top: 80px;
+}
+
+/*Nav*/
+
+nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 20px;
+}
+
+nav ul:first-child {
+  float: left;
+}
+
+nav ul:last-child {
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  padding: 0 15px;
+  color: black;
+}
+
+nav a:not(.logo) {
+  line-height: 40px;
+}
+
+nav a.btn-blue {
+  padding: 0 25px;
+  margin-left: 15px;
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+/* >> >> FOOTER >> >> */
+
+footer {
+  background: black;
+  color: white;
+  padding: 100px 0 50px;
+}
+
+footer .container {
+  width: 80%;
+  margin: auto;
+}
+
+footer ul {
+  margin: 30px 0 90px;
+}
+
+footer li a {
+  color: white;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+footer hr {
+  width: 50px;
+}
+
+footer .language {
+  margin-top: 50px;
+}
