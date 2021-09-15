@@ -49,8 +49,19 @@ header .wider.row {
 }
 
 .hero i {
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 40px;
+  position: relative;
+  animation: up-and-down 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes up-and-down {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 10px;
+  }
 }
 
 /*----------------------- B: MAIN -----------------------*/
@@ -73,6 +84,7 @@ main .btn-white {
 
 .billing_options label {
   margin: 0 20px 0 3px;
+  cursor: pointer;
 }
 
 /*3/9 COLUMN CARDS*/
@@ -172,11 +184,10 @@ main .btn-white {
 
 /*b. TESTIMONIAL REVIEW*/
 
-.testimonial_review {
+.testimonial_reviews {
   width: calc(100vw / 7 * 3);
   height: calc(100vw / 7 * 2);
-  padding: 40px;
-  background: #f5f5f5;
+  position: relative;
 }
 
 .testimonial_logo {
@@ -188,6 +199,16 @@ main .btn-white {
   filter: invert();
 }
 
+.testimonial_review {
+  background: #f5f5f5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+}
+
 .testimonial_review hr {
   width: 50px;
   margin-top: 30px;
@@ -195,6 +216,176 @@ main .btn-white {
 
 .testimonial_review blockquote {
   margin: 40px 0;
+}
+
+/*Testimonial reviews transitions*/
+.testimonial_review::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 5px;
+  background-color: black;
+  animation: bar_5s 5s ease-in-out infinite;
+}
+
+.testimonial_review:nth-of-type(1) {
+  animation: show_review_1 40s infinite;
+}
+
+.testimonial_review:nth-of-type(2) {
+  animation: show_review_2 40s infinite;
+}
+
+.testimonial_review:nth-of-type(3) {
+  animation: show_review_3 40s infinite;
+}
+
+.testimonial_review:nth-of-type(4) {
+  animation: show_review_4 40s infinite;
+}
+
+.testimonial_review:nth-of-type(5) {
+  animation: show_review_5 40s infinite;
+}
+
+.testimonial_review:nth-of-type(6) {
+  animation: show_review_6 40s infinite;
+}
+
+.testimonial_review:nth-of-type(7) {
+  animation: show_review_7 40s infinite;
+}
+
+.testimonial_review:nth-of-type(8) {
+  animation: show_review_8 40s infinite;
+}
+
+@keyframes bar_5s {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes show_review_1 {
+  0% {
+    z-index: 99;
+  }
+  12% {
+    z-index: 99;
+  }
+  12.5% {
+    z-index: 0;
+  }
+}
+
+@keyframes show_review_2 {
+  12% {
+    z-index: 0;
+  }
+  12.5% {
+    z-index: 99;
+  }
+  24.5% {
+    z-index: 99;
+  }
+  25% {
+    z-index: 0;
+  }
+}
+
+@keyframes show_review_3 {
+  24.5% {
+    z-index: 0;
+  }
+  25% {
+    z-index: 99;
+  }
+  37% {
+    z-index: 99;
+  }
+  37.5% {
+    z-index: 0;
+  }
+}
+
+@keyframes show_review_4 {
+  37% {
+    z-index: 0;
+  }
+  37.5% {
+    z-index: 99;
+  }
+  49.5% {
+    z-index: 99;
+  }
+  50% {
+    z-index: 0;
+  }
+}
+
+@keyframes show_review_5 {
+  49.5% {
+    z-index: 0;
+  }
+  50% {
+    z-index: 99;
+  }
+  62% {
+    z-index: 99;
+  }
+  62.5% {
+    z-index: 0;
+  }
+}
+
+@keyframes show_review_6 {
+  62% {
+    z-index: 0;
+  }
+  62.5% {
+    z-index: 99;
+  }
+  74.5% {
+    z-index: 99;
+  }
+  75% {
+    z-index: 0;
+  }
+}
+
+@keyframes show_review_7 {
+  74.5% {
+    z-index: 0;
+  }
+  75% {
+    z-index: 99;
+  }
+  87% {
+    z-index: 99;
+  }
+  87.5% {
+    z-index: 0;
+  }
+}
+
+@keyframes show_review_8 {
+  87% {
+    z-index: 0;
+  }
+  87.5% {
+    z-index: 99;
+  }
+  99.5% {
+    z-index: 99;
+  }
+  100% {
+    z-index: 0;
+  }
 }
 
 /*c. TESTIMONIALS SQUARE GROUPS*/
@@ -219,33 +410,186 @@ main .btn-white {
 /*First testimonials group logos*/
 .logo_square.a {
   background: #a2d39b;
-}
-.logo_square.a.active {
-  box-shadow: 0 0 0 15px #d0e9cd inset;
+  animation: logo_1 40s infinite;
 }
 
 .logo_square.b {
   background: var(--bordeaux);
+  animation: logo_2 40s infinite;
 }
+
 .logo_square.c {
   background: #0093ce;
+  animation: logo_5 40s infinite;
 }
+
 .logo_square.d {
   background: #ff1c1c;
+  animation: logo_6 40s infinite;
 }
 
 /*Second testimonials group logos*/
 .logo_square.e {
   background: #d5001f;
+  animation: logo_3 40s infinite;
 }
+
 .logo_square.f {
   background: var(--light-blue);
+  animation: logo_4 40s infinite;
 }
+
 .logo_square.g {
   background: #0d2481;
+  animation: logo_7 40s infinite;
 }
+
 .logo_square.h {
   background: #ffd830;
+  animation: logo_8 40s infinite;
+}
+
+/* Testimonial logos animations */
+
+@keyframes logo_1 {
+  0% {
+    box-shadow: none;
+  }
+  0.5% {
+    box-shadow: 0 0 0 10px #d0e9cd inset;
+  }
+  12% {
+    box-shadow: 0 0 0 10px #d0e9cd inset;
+  }
+  12.5% {
+    box-shadow: none;
+  }
+}
+
+@keyframes logo_2 {
+  0% {
+    box-shadow: none;
+  }
+  12% {
+    box-shadow: none;
+  }
+  12.5% {
+    box-shadow: 0 0 0 10px #b38795 inset;
+  }
+  24.5% {
+    box-shadow: 0 0 0 10px #b38795 inset;
+  }
+  25% {
+    box-shadow: none;
+  }
+}
+
+@keyframes logo_3 {
+  0% {
+    box-shadow: none;
+  }
+  24.5% {
+    box-shadow: none;
+  }
+  25% {
+    box-shadow: 0 0 0 10px #ee9093 inset;
+  }
+  37% {
+    box-shadow: 0 0 0 10px #ee9093 inset;
+  }
+  37.5% {
+    box-shadow: none;
+  }
+}
+
+@keyframes logo_4 {
+  0% {
+    box-shadow: none;
+  }
+  37% {
+    box-shadow: none;
+  }
+  37.5% {
+    box-shadow: 0 0 0 10px #d9e7f3 inset;
+  }
+  49.5% {
+    box-shadow: 0 0 0 10px #d9e7f3 inset;
+  }
+  50% {
+    box-shadow: none;
+  }
+}
+
+@keyframes logo_5 {
+  0% {
+    box-shadow: none;
+  }
+  49.5% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 0 10px #95c9e7 inset;
+  }
+  62% {
+    box-shadow: 0 0 0 10px #95c9e7 inset;
+  }
+  62.5% {
+    box-shadow: none;
+  }
+}
+
+@keyframes logo_6 {
+  0% {
+    box-shadow: none;
+  }
+  62% {
+    box-shadow: none;
+  }
+  62.5% {
+    box-shadow: 0 0 0 10px #ff9894 inset;
+  }
+  74.5% {
+    box-shadow: 0 0 0 10px #ff9894 inset;
+  }
+  75% {
+    box-shadow: none;
+  }
+}
+
+@keyframes logo_7 {
+  0% {
+    box-shadow: none;
+  }
+  74.5% {
+    box-shadow: none;
+  }
+  75% {
+    box-shadow: 0 0 0 10px #8791c2 inset;
+  }
+  87% {
+    box-shadow: 0 0 0 10px #8791c2 inset;
+  }
+  87.5% {
+    box-shadow: none;
+  }
+}
+
+@keyframes logo_8 {
+  0% {
+    box-shadow: none;
+  }
+  87% {
+    box-shadow: none;
+  }
+  87.5% {
+    box-shadow: 0 0 0 10px #feeaa1 inset;
+  }
+  99.5% {
+    box-shadow: 0 0 0 10px #feeaa1 inset;
+  }
+  100% {
+    box-shadow: none;
+  }
 }
 
 /* >>>>>>>>>>>> 5. MAIN CALL TO ACTION >>>>>>>>>>>> */
@@ -277,9 +621,27 @@ main .btn-white {
 }
 
 .row.faq h3,
-.row.faq h4,
-.row.faq i {
-  margin: 30px 0;
+.question h4,
+.question i {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.question p {
+  display: none;
+  padding-bottom: 30px;
+}
+
+.question {
+  cursor: pointer;
+}
+
+.question:focus p {
+  display: block;
+}
+
+.question:focus i {
+  transform: rotateX(180deg);
 }
 
 .row.faq h4 {

@@ -298,4 +298,5 @@ footer hr {
 
 footer .language {
   margin-top: 50px;
+  cursor: pointer;
 }
