@@ -42,7 +42,38 @@
   color: white;
 }
 
-.try_gratis {
-  margin: 20px 0;
+.free_trial_btn {
+  margin: 40px 0;
   padding: 0 20px;
+}
+
+.functions .function {
+  min-height: 250px;
+  min-width: 280px;
+  margin-bottom: 30px;
+}
+
+.functions h4 {
+  min-height: 60px;
+}
+
+main .row.function_articles_header {
+  padding: 0;
+}
+
+.container_function_articles .row {
+  width: calc(100% - 40px);
+}
+
+.container_main_call_to_action {
+  margin-top: 50px;
+  background: #0e2381;
+}
+
+.container_main_call_to_action h2 {
+  color: #ffcb94;
+}
+
+.container_main_call_to_action p {
+  margin-top: 20px;
 }

@@ -67,6 +67,12 @@ header .wider.row {
 
 /*----------------------- B: MAIN -----------------------*/
 
+main .btn-blue,
+main .btn-white {
+  width: 100%;
+  text-align: center;
+}
+
 /* >>>>>>>>>>>>>> 1. BILLING PLANS >>>>>>>>>>>>>> */
 
 .billing_options {
