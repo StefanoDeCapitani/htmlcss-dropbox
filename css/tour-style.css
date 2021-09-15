@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+}
+
+.hero_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vw;
+  opacity: 0;
+  cursor: pointer;
+  background: black;
+}
+
+.hero_image {
+  height: 50vw;
+  object-fit: cover;
+}
+
+.hero_video:focus {
+  opacity: 100%;
+}
+
+.play_button {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.play_button i {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: white;
+}
+
+.try_gratis {
+  margin: 20px 0;
+  padding: 0 20px;
+}

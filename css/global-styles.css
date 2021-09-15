@@ -143,6 +143,7 @@ img {
   background-color: var(--blue);
   color: white;
   line-height: 40px;
+  text-align: center;
 }
 
 .btn-blue:hover {
@@ -222,9 +223,8 @@ h5 {
 
 /* >> >> HEADER >> >> */
 
-header {
-  background-color: var(--light-blue);
-  padding-top: 80px;
+.nav_bar_space {
+  height: 80px;
 }
 
 /*Nav*/
@@ -267,6 +267,18 @@ nav a.btn-blue {
 
 .logo {
   vertical-align: middle;
+}
+
+/* >> >> MAIN >> >> */
+
+main .row {
+  padding: 50px 0;
+}
+
+main .btn-blue,
+main .btn-white {
+  width: 100%;
+  text-align: center;
 }
 
 /* >> >> FOOTER >> >> */

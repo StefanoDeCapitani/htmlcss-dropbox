@@ -29,6 +29,7 @@ B: MAIN
 /*--------------------- A: HEADER ---------------------*/
 
 header {
+  background-color: var(--light-blue);
   margin-bottom: 100px;
 }
 
@@ -65,16 +66,6 @@ header .wider.row {
 }
 
 /*----------------------- B: MAIN -----------------------*/
-
-main .row {
-  padding: 50px 0;
-}
-
-main .btn-blue,
-main .btn-white {
-  width: 100%;
-  text-align: center;
-}
 
 /* >>>>>>>>>>>>>> 1. BILLING PLANS >>>>>>>>>>>>>> */
 
