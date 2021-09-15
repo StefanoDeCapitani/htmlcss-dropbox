@@ -145,10 +145,18 @@ img {
   line-height: 40px;
 }
 
+.btn-blue:hover {
+  background-color: #3c85ff;
+}
+
 .btn-white {
   background-color: white;
   color: black;
   line-height: 40px;
+}
+
+.btn-white:hover {
+  background-color: #f5f5f5;
 }
 
 .btn-transparent {
@@ -157,6 +165,10 @@ img {
   line-height: 40px;
   border: 1px solid black;
   padding: 0 20px;
+}
+
+.btn-transparent:hover {
+  box-shadow: 0 0 0 1px black inset;
 }
 
 /*------------------- C: TYPOGRAPHY -------------------*/
@@ -194,7 +206,15 @@ h5 {
   color: blue;
 }
 
-.a-underline {
+.underline {
+  text-decoration: underline;
+}
+
+.underline:hover {
+  text-decoration: none;
+}
+
+.no-underline:hover {
   text-decoration: underline;
 }
 
