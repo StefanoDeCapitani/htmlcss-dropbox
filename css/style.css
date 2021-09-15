@@ -82,9 +82,24 @@ main .btn-white {
   padding-top: 40px;
 }
 
+.billing_options input {
+  opacity: 0;
+}
+
 .billing_options label {
+  position: relative;
   margin: 0 20px 0 3px;
   cursor: pointer;
+}
+
+.billing_options label:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: black;
+  transform: translate(-50%, 0);
 }
 
 /*3/9 COLUMN CARDS*/
@@ -185,7 +200,7 @@ main .btn-white {
 /*b. TESTIMONIAL REVIEW*/
 
 .testimonial_reviews {
-  width: calc(100vw / 7 * 3);
+  width: calc(100% / 7 * 3);
   height: calc(100vw / 7 * 2);
   position: relative;
 }
@@ -391,7 +406,7 @@ main .btn-white {
 /*c. TESTIMONIALS SQUARE GROUPS*/
 
 .logo_square {
-  width: calc(100vw / 7);
+  width: calc(100% / 2);
   height: calc(100vw / 7);
   position: relative;
 }
@@ -404,7 +419,7 @@ main .btn-white {
 }
 
 .square_of_testimonials {
-  width: calc(100vw / 7 * 2);
+  width: calc(100% / 7 * 2);
 }
 
 /*First testimonials group logos*/
