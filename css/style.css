@@ -88,18 +88,26 @@ main .btn-white {
 
 .billing_options label {
   position: relative;
+  left: 6px;
   margin: 0 20px 0 3px;
   cursor: pointer;
 }
 
-.billing_options label:before {
+.billing_options label::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
   height: 20px;
   width: 20px;
-  background: black;
-  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 1px solid var(--grey);
+  transform: translate(-27px, -50%);
+}
+
+.billing_options input:checked + label::before {
+  border: none;
+  box-shadow: 0 0 0 5px var(--blue) inset;
 }
 
 /*3/9 COLUMN CARDS*/
@@ -221,12 +229,13 @@ main .btn-white {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: auto;
   padding: 40px;
 }
 
 .testimonial_review hr {
   width: 50px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .testimonial_review blockquote {
@@ -239,7 +248,7 @@ main .btn-white {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 51;
   height: 5px;
   background-color: black;
   animation: bar_5s 5s ease-in-out infinite;
@@ -288,10 +297,10 @@ main .btn-white {
 
 @keyframes show_review_1 {
   0% {
-    z-index: 99;
+    z-index: 50;
   }
   12% {
-    z-index: 99;
+    z-index: 50;
   }
   12.5% {
     z-index: 0;
@@ -303,10 +312,10 @@ main .btn-white {
     z-index: 0;
   }
   12.5% {
-    z-index: 99;
+    z-index: 50;
   }
   24.5% {
-    z-index: 99;
+    z-index: 50;
   }
   25% {
     z-index: 0;
@@ -318,10 +327,10 @@ main .btn-white {
     z-index: 0;
   }
   25% {
-    z-index: 99;
+    z-index: 50;
   }
   37% {
-    z-index: 99;
+    z-index: 50;
   }
   37.5% {
     z-index: 0;
@@ -333,10 +342,10 @@ main .btn-white {
     z-index: 0;
   }
   37.5% {
-    z-index: 99;
+    z-index: 50;
   }
   49.5% {
-    z-index: 99;
+    z-index: 50;
   }
   50% {
     z-index: 0;
@@ -348,10 +357,10 @@ main .btn-white {
     z-index: 0;
   }
   50% {
-    z-index: 99;
+    z-index: 50;
   }
   62% {
-    z-index: 99;
+    z-index: 50;
   }
   62.5% {
     z-index: 0;
@@ -363,10 +372,10 @@ main .btn-white {
     z-index: 0;
   }
   62.5% {
-    z-index: 99;
+    z-index: 50;
   }
   74.5% {
-    z-index: 99;
+    z-index: 50;
   }
   75% {
     z-index: 0;
@@ -378,10 +387,10 @@ main .btn-white {
     z-index: 0;
   }
   75% {
-    z-index: 99;
+    z-index: 50;
   }
   87% {
-    z-index: 99;
+    z-index: 50;
   }
   87.5% {
     z-index: 0;
@@ -393,10 +402,10 @@ main .btn-white {
     z-index: 0;
   }
   87.5% {
-    z-index: 99;
+    z-index: 50;
   }
   99.5% {
-    z-index: 99;
+    z-index: 50;
   }
   100% {
     z-index: 0;
