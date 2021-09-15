@@ -274,7 +274,7 @@ nav a.btn-blue {
 footer {
   background: black;
   color: white;
-  padding: 100px 0 50px;
+  padding: 100px 0 150px;
 }
 
 footer .container {
@@ -297,6 +297,14 @@ footer hr {
 }
 
 footer .language {
+  display: inline-block;
+  padding: 2px;
   margin-top: 50px;
   cursor: pointer;
+  color: var(--grey);
+}
+
+footer .language:focus {
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px white, 0 0 0 2px var(--blue) inset;
 }
