@@ -19,7 +19,7 @@
 }
 
 .hero_video:focus {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .play_button {
@@ -63,6 +63,14 @@ main .row.function_articles_header {
 
 .container_function_articles .row {
   width: calc(100% - 40px);
+}
+
+.container_function_articles h4 {
+  margin-top: 30px;
+}
+
+.container_function_articles p {
+  margin: 30px 0;
 }
 
 .container_main_call_to_action {
