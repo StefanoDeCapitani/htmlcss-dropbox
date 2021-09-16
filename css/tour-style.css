@@ -1,3 +1,17 @@
+/*=======================================
+Table of content:
+A: HEADER
+  - Hero section
+B: MAIN
+  - Main heading
+  - Functions section
+  - Articles about functions
+  - Main call to action
+=======================================*/
+
+/* >> >> A: HEADER >> >> */
+
+/*Hero section*/
 .hero {
   position: relative;
 }
@@ -9,17 +23,25 @@
   width: 100%;
   height: 50vw;
   opacity: 0;
+  /*The video is hidden, even if it remains 
+  on top of the image so it is focusable*/
   cursor: pointer;
   background: black;
+}
+
+.hero_video:focus {
+  /*When the video is focused it is shown. 
+  This is a hack to partially imitate what should be made with 
+  javascript to play the video and make the hero image disappear.
+  The problem with this solution is that when the focus moves 
+  to something else, while the video continues playing, it 
+  disappears and the image is revealed.*/
+  opacity: 1;
 }
 
 .hero_image {
   height: 50vw;
   object-fit: cover;
-}
-
-.hero_video:focus {
-  opacity: 1;
 }
 
 .play_button {
@@ -42,10 +64,16 @@
   color: white;
 }
 
+/* >> >> B: MAIN >> >> */
+
+/*Main heading*/
+
 .free_trial_btn {
   margin: 40px 0;
   padding: 0 20px;
 }
+
+/*Functions section*/
 
 .functions .function {
   min-height: 250px;
@@ -56,6 +84,8 @@
 .functions h4 {
   min-height: 60px;
 }
+
+/*Articles about functions*/
 
 main .row.function_articles_header {
   padding: 0;
@@ -72,6 +102,8 @@ main .row.function_articles_header {
 .container_function_articles p {
   margin: 30px 0;
 }
+
+/*Main call to action*/
 
 .container_main_call_to_action {
   margin-top: 50px;
