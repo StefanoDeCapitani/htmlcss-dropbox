@@ -68,16 +68,16 @@ img {
 
 /*1. Float classes on container*/
 
-.float-left > * {
+.all-children-float-left > * {
   float: left;
 }
 
-.float-right > * {
+.all-children-float-right > * {
   float: right;
 }
 
-.float-left::after,
-.float-right::after {
+.all-children-float-left::after,
+.all-children-float-right::after {
   content: "";
   display: table;
   clear: both;

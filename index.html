@@ -21,8 +21,6 @@
   <body>
     <!-- Start header -->
     <header>
-      <div class="nav_bar_space"></div>
-
       <!-- Start navigation bar -->
       <nav class="clearfix">
         <!-- Left link list -->
@@ -49,6 +47,9 @@
         </ul>
       </nav>
       <!-- End navigation bar -->
+
+      <!-- An empty div that occupies the space of the navbar which is "position: fixed" and is out of the flow of the document -->
+      <div class="nav_bar_space"></div>
 
       <!-- Start hero section -->
       <section class="wider row">
@@ -298,7 +299,7 @@
         <!-- Start enterprise billing plan card -->
         <div class="billing_card width-100">
           <div class="category"><i class="fas fa-users"></i> Team</div>
-          <div class="plan_description enterprise float-left">
+          <div class="plan_description enterprise all-children-float-left">
             <!-- Start left column enterprise card -->
             <section class="col-6_9 secondary_info">
               <h3>Enterprise</h3>
@@ -458,9 +459,9 @@
         </section>
       </div>
       <!-- Start clients reviews -->
-      <div class="float-left">
+      <div class="all-children-float-left">
         <!-- Start first group of testimonials -->
-        <div class="square_of_testimonials float-left">
+        <div class="square_of_testimonials all-children-float-left">
           <!-- Top-left logo 1/4 -->
           <div class="logo_square a active">
             <img
@@ -672,7 +673,7 @@
         <!-- End testimonial reviews -->
 
         <!-- Start second group of testimonials -->
-        <div class="square_of_testimonials float-left">
+        <div class="square_of_testimonials all-children-float-left">
           <!-- Top-left logo 1/4 -->
           <div class="logo_square e">
             <img
@@ -713,7 +714,7 @@
 
       <!-- Start main call to action section -->
       <div class="main-call-to-action">
-        <div class="row float-left">
+        <div class="row all-children-float-left">
           <!-- Start first column main call to action -->
           <section class="col-6_9">
             <h2>Porta Dropbox Business nella tua azienda.</h2>
@@ -815,7 +816,7 @@
     <footer>
       <!-- Start site map container -->
       <div class="container">
-        <div class="float-left">
+        <div class="all-children-float-left">
           <!-- Start first link list -->
           <section class="col-1_5">
             <h4>Dropbox</h4>
