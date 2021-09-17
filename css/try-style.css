@@ -1,0 +1,289 @@
+/* >> >> HEADER >> >> */
+
+/*NAV*/
+
+.nav_right_links {
+  position: relative;
+}
+
+#contatti {
+  display: none;
+}
+
+#contatti + label {
+  cursor: pointer;
+}
+
+#contatti + label:hover,
+#contatti + label:hover i {
+  color: rgb(53, 53, 53);
+}
+
+#contatti + label i {
+  position: relative;
+  bottom: 2px;
+  left: 3px;
+  transition: all 0.2s linear;
+}
+
+#contatti:checked + label:focus,
+#contatti:checked + label:focus i {
+  color: rgb(53, 53, 53);
+}
+
+#contatti:checked + label:focus i {
+  bottom: -2px;
+  transform: rotateZ(180deg);
+}
+
+.drop_down_baloon {
+  display: none;
+  line-height: normal;
+  padding: 20px 30px;
+}
+
+.drop_down_baloon i {
+  color: var(--blue);
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.drop_down_baloon li:nth-child(2) {
+  margin: 10px 0;
+}
+
+.drop_down_baloon::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 15px;
+  width: 12px;
+  height: 12px;
+  border-top-left-radius: 5px;
+  transform: rotateZ(45deg);
+  border-left: 1px solid var(--light-grey);
+  border-top: 1px solid var(--light-grey);
+  background: white;
+}
+
+#contatti:checked + label:focus + .drop_down_baloon {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 200px;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid var(--light-grey);
+}
+
+main,
+footer {
+  background: #fafbfc;
+}
+
+main {
+  padding: 100px 0;
+}
+
+main .container_free_trial {
+  display: block;
+  margin: auto;
+  width: 890px;
+}
+
+.info_free_trial {
+  padding: 10px;
+}
+
+.info_free_trial,
+.form_free_trial {
+  width: 445px;
+}
+
+.info_free_trial h3 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.info_free_trial > p {
+  font-weight: 600;
+}
+
+.info_free_trial hr {
+  margin: 30px 40px 30px 0;
+}
+
+.info_free_trial ul {
+  margin-top: 15px;
+}
+
+.info_free_trial li {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.info_free_trial li i {
+  color: var(--blue);
+  margin-right: 10px;
+}
+
+/*FORM*/
+
+form h4,
+form p {
+  display: inline-block;
+}
+
+form h4,
+label {
+  font-weight: 300;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form > * {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+form input.input_field {
+  width: calc(100% / 2 - 25px);
+  padding: 15px;
+}
+
+form .input_field,
+form select,
+form .btn-white {
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+}
+
+.input_field:nth-of-type(odd) {
+  margin-right: 15px;
+}
+
+.input_field:nth-of-type(even) {
+  margin-left: 15px;
+}
+
+form #country {
+  display: inline-block;
+  padding: 15px;
+}
+
+.text_with_side_lines {
+  position: relative;
+  text-align: center;
+}
+
+.text_with_side_lines span {
+  display: inline;
+  background: white;
+  padding: 0 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.text_with_side_lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 30%;
+  height: 5px;
+  background: transparent;
+  border-top: 1px solid black;
+}
+
+form a.btn-white {
+  padding: 5px;
+}
+
+form a.btn-white .google_logo {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.radio_button_container {
+  position: relative;
+  height: 88px;
+  border-radius: 5px;
+  background: white;
+}
+
+.radio_button_container:hover {
+  background-color: #f5f5f5;
+}
+
+.radio_button_container:last-child {
+  height: 106px;
+}
+
+.custom-radio-button {
+  position: absolute;
+}
+
+.radio_button_container label {
+  display: inline-block;
+  padding: 12px 12px 12px 50px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+}
+
+.radio_button_container label::before {
+  top: 14px;
+  left: 15px;
+  transform: translate(0, 0);
+}
+
+.custom-radio-button:checked + label {
+  border: 1px solid var(--grey);
+}
+
+.radio_button_container p {
+  position: absolute;
+  font-weight: 300;
+  bottom: 12px;
+  left: 50px;
+  right: 12px;
+}
+
+.checkbox_input_container:first-child {
+  margin-top: 30px;
+}
+
+.checkbox_input_container {
+  position: relative;
+}
+
+.checkbox_input_container p {
+  display: inline-block;
+  width: 90%;
+  margin-left: 20px;
+}
+
+.checkbox_input_container label {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+form input[type="submit"].btn-blue {
+  margin-top: 30px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+
+form > p:last-child {
+  text-align: center;
+  margin-top: 0;
+}
