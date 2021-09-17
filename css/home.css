@@ -79,32 +79,15 @@ main .btn-white {
   padding-top: 40px;
 }
 
-.billing_options input {
-  opacity: 0;
-}
-
 .billing_options label {
-  position: relative;
   left: 6px;
   margin: 0 20px 0 3px;
-  cursor: pointer;
 }
 
 .billing_options label::before {
-  content: "";
-  position: absolute;
   top: 50%;
   left: 0;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: 1px solid var(--grey);
   transform: translate(-27px, -50%);
-}
-
-.billing_options input:checked + label::before {
-  border: none;
-  box-shadow: 0 0 0 5px var(--blue) inset;
 }
 
 /*3/9 COLUMN CARDS*/
@@ -116,7 +99,7 @@ main .btn-white {
 }
 
 .billing_card .category {
-  border: 1px solid var(--grey);
+  border: 1px solid var(--light-grey);
   border-bottom: none;
   padding: 10px 0;
   text-align: center;
@@ -124,7 +107,7 @@ main .btn-white {
 
 .plan_description {
   padding: 30px;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--light-grey);
 }
 
 .plan_description:not(.enterprise) {

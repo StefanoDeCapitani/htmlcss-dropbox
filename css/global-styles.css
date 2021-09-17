@@ -12,6 +12,8 @@ B: UTILITY CLASSES
     2. Rows
     3. Columns
     4. Buttons
+    5. Custom radio buttons
+    6. Custom checkbox
 C: TYPOGRAPHY
     1. Html tags
     2. Utility classes
@@ -43,6 +45,7 @@ D: LAYOUT
   --blue: #0061ff;
   --light-blue: #b4d0e7;
   --grey: #637381;
+  --light-grey: #bec8d1;
   /*TYPOGRAPHY*/
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -86,7 +89,7 @@ img {
 /*2. Rows*/
 
 .row {
-  width: 70%;
+  width: 80%;
   margin: auto;
   max-width: 1250px;
 }
@@ -133,12 +136,20 @@ img {
   width: calc(100% / 9 * 6);
 }
 
+.col-7_9 {
+  width: calc(100% / 9 * 7);
+}
+
 .col-1_5 {
   width: calc(100% / 5);
 }
 
 .col-1_4 {
   width: calc(100% / 4);
+}
+
+.col-1_2 {
+  width: calc(100% / 2);
 }
 
 /*4. Buttons*/
@@ -176,6 +187,67 @@ img {
 
 .btn-transparent:hover {
   box-shadow: 0 0 0 1px black inset;
+}
+
+/*5. Custom radio buttons*/
+
+.custom-radio-button {
+  opacity: 0;
+}
+
+.custom-radio-button + label {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-radio-button + label::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--grey);
+  transition: all 0.2s;
+}
+
+.custom-radio-button:checked + label::before {
+  border: none;
+  box-shadow: 0 0 0 5px var(--blue) inset;
+}
+
+/*6. Custom checkbox*/
+
+.custom-checkbox {
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border-radius: 2px;
+  border: 1px solid var(--light-grey);
+  transition: all 0.2s;
+}
+
+.custom-checkbox + label i {
+  position: absolute;
+  font-size: 23px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--blue);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.custom-checkbox:checked + label i {
+  opacity: 100;
+}
+
+.custom-checkbox:checked + label {
+  border: 0px solid var(--light-grey);
+  box-shadow: 0 0 8px var(--blue);
 }
 
 /*------------------- C: TYPOGRAPHY -------------------*/
@@ -247,36 +319,39 @@ nav {
   z-index: 99;
   width: 100%;
   padding: 20px;
+  border-bottom: 1px solid var(--light-grey);
+  box-shadow: 0 0 5px var(--light-grey);
 }
 
-nav ul:first-child {
+nav .nav_left_links {
   float: left;
 }
 
-nav ul:last-child {
+nav .nav_right_links {
   float: right;
 }
 
-nav li {
+nav > ul li {
   display: inline-block;
 }
 
-nav a {
+nav .clickable:not(.btn-blue) {
   padding: 0 15px;
   color: black;
 }
 
-nav a:not(.logo) {
+nav .clickable:not(.logo) {
   line-height: 40px;
 }
 
-nav a.btn-blue {
+nav .clickable.btn-blue {
   padding: 0 25px;
   margin-left: 15px;
 }
 
 .logo {
   vertical-align: middle;
+  padding: 8px 0 7px;
 }
 
 /* >> >> MAIN >> >> */
@@ -287,15 +362,10 @@ main .row {
 
 /* >> >> FOOTER >> >> */
 
-footer {
+footer:not(.footer-light) {
   background: black;
   color: white;
-  padding: 100px 0 150px;
-}
-
-footer .container {
-  width: 80%;
-  margin: auto;
+  padding: 100px 0 100px;
 }
 
 footer ul {
@@ -303,19 +373,23 @@ footer ul {
 }
 
 footer li a {
-  color: white;
   font-size: 14px;
   line-height: 30px;
 }
 
-footer hr {
+footer:not(.footer-light) li a {
+  color: white;
+}
+
+footer section hr {
   width: 50px;
 }
 
 footer .language {
   display: inline-block;
-  padding: 2px;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 0;
   cursor: pointer;
   color: var(--grey);
 }
@@ -323,4 +397,21 @@ footer .language {
 footer .language:focus {
   border-radius: 5px;
   box-shadow: 0 0 0 1px white, 0 0 0 2px var(--blue) inset;
+}
+
+/* >> >> FOOTER LIGHT >> >> */
+
+.footer-light,
+.footer-light li a {
+  color: var(--grey);
+}
+
+.footer-light hr {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
+
+.footer-light .language {
+  margin-top: 20px;
 }
